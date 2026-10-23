@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cashflow-simple-ledger"
+version = "0.1.0"
+description = "Local-first bookkeeping CLI: track income/expenses, import bank CSVs with dedupe, auto-categorize from a rules file, get monthly summaries and tax-season exports."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Asdale Dynamics, LLC" }]
+license = { text = "MIT" }
+keywords = ["bookkeeping", "ledger", "cashflow", "cli", "local-first", "csv", "author-tools", "small-business"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "Intended Audience :: Authors",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Office/Business :: Financial :: Accounting",
+]
+dependencies = []
+
+[project.scripts]
+cashflow = "cashflow.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["cashflow*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

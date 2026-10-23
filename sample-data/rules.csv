@@ -1,0 +1,14 @@
+match_type,match_value,category
+contains,KDP,Book Royalties
+contains,SQUARE PAYOUT,Book Sales
+contains,EBOOK,Book Sales
+contains,STAPLES,Office Supplies
+contains,CANVA,Software
+contains,ADOBE,Software
+contains,GODADDY,Website
+contains,USPS,Shipping
+contains,GOOGLE ADS,Marketing
+contains,PANERA,Meals
+contains,LOGITECH,Equipment
+contains,MOBI,Equipment
+contains,TRANSFER TO SAVINGS,Transfers
